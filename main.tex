@@ -12,6 +12,9 @@
 \usepackage{amsmath}
 \usepackage{graphicx}
 \usepackage[colorlinks=true, allcolors=blue]{hyperref}
+\usepackage[backend=biber, style=apa]{biblatex}
+
+\addbibresource{references.bib}
 
 \title{Investigating Quantum Behavior Under Gravitational Waves: A Novel Experiment Combining Moving Double Slits and LIGO
 }
@@ -30,17 +33,17 @@ Quantum mechanics and general relativity are the two foundational pillars of mod
 This paper presents an innovative experimental design combining LIGO with a modified double slit experiment to investigate the interplay between gravitational waves and quantum particles. We hypothesize that varying distances and motions of the double slits will yield distinct interference patterns, revealing gravitational influences on quantum phenomena. These findings could potentially bridge the gap between quantum mechanics and general relativity.
 
 \section{Literature Review}
-The intersection of quantum mechanics and gravitational wave physics has become a vibrant field of study, with various experiments aiming to unravel the complexities of quantum gravity. The double-slit experiment, first conducted by Thomas Young in 1801, showcased the wave-particle duality of light, serving as a foundational pillar in quantum mechanics. Recent advancements in quantum theory have expanded our understanding of this phenomenon, particularly regarding quantum superposition and entanglement \cite{nielsen2010}.
+The intersection of quantum mechanics and gravitational wave physics has become a vibrant field of study, with various experiments aiming to unravel the complexities of quantum gravity. The double-slit experiment, first conducted by Thomas Young in 1801, showcased the wave-particle duality of light, serving as a foundational pillar in quantum mechanics. Recent advancements in quantum theory have expanded our understanding of this phenomenon, particularly regarding quantum superposition and entanglement (\cite{nielsen2010}).
 
-The detection of gravitational waves by the Laser Interferometer Gravitational-Wave Observatory (LIGO) in 2015 marked a significant milestone, leading to new inquiries about the interplay between gravitational waves and quantum systems \cite{abbott2016}. However, a gap remains in correlating gravitational waves with quantum phenomena. Studies have indicated potential connections between quantum fluctuations and gravitational waves, indicating that gravitational effects may influence quantum systems \cite{maldacena2013}.
+The detection of gravitational waves by the Laser Interferometer Gravitational-Wave Observatory (LIGO) in 2015 marked a significant milestone, leading to new inquiries about the interplay between gravitational waves and quantum systems (\cite{abbott2016}). However, a gap remains in correlating gravitational waves with quantum phenomena. Studies have indicated potential connections between quantum fluctuations and gravitational waves, indicating that gravitational effects may influence quantum systems (\cite{maldacena2013}).
 
-Several experiments have been proposed to investigate the quantum effects of gravity. One such proposal involves Entanglement Witness techniques, which aim to determine whether gravity can induce entanglement between massive particles. These experiments test the fundamental principles of quantum mechanics in the presence of gravitational fields, potentially revealing how gravity interacts with quantum systems \cite{rangamani2017}.
+Several experiments have been proposed to investigate the quantum effects of gravity. One such proposal involves Entanglement Witness techniques, which aim to determine whether gravity can induce entanglement between massive particles. These experiments test the fundamental principles of quantum mechanics in the presence of gravitational fields, potentially revealing how gravity interacts with quantum systems (\cite{rangamani2017}).
 
-Another notable study, "Testing the Quantumness of Gravity without Entanglement," explores how quantum effects can be observed in gravitational contexts without relying on entanglement. This research suggests that even classical gravity could exhibit quantum characteristics under specific conditions, providing insights into how gravity might operate at the quantum level \cite{oppenheim2021}.
+Another notable study, "Testing the Quantumness of Gravity without Entanglement," explores how quantum effects can be observed in gravitational contexts without relying on entanglement. This research suggests that even classical gravity could exhibit quantum characteristics under specific conditions, providing insights into how gravity might operate at the quantum level (\cite{oppenheim2021}).
 
-The moving double-slit experiment is a novel extension of the classic setup that offers insights into how particles behave in dynamic environments. Previous research has shown that the motion of slits can alter interference patterns, indicating that the wave function of particles can be affected by external conditions \cite{scully1999}. Integrating this with gravitational wave detection could enhance our understanding of quantum interactions under extreme conditions.
+The moving double-slit experiment is a novel extension of the classic setup that offers insights into how particles behave in dynamic environments. Previous research has shown that the motion of slits can alter interference patterns, indicating that the wave function of particles can be affected by external conditions (\cite{scully1999}). Integrating this with gravitational wave detection could enhance our understanding of quantum interactions under extreme conditions.
 
-Moreover, both analog and digital data capture methods are employed in quantum experiments and gravitational wave detection. The reliability of these data is critical for validating experimental results. Research on the limitations of digital versus analog data collection indicates that while digital systems offer precision and ease of analysis, analog systems are often considered more robust in certain experimental setups due to their longstanding application in physics \cite{klyshko1988}.
+Moreover, both analog and digital data capture methods are employed in quantum experiments and gravitational wave detection. The reliability of these data is critical for validating experimental results. Research on the limitations of digital versus analog data collection indicates that while digital systems offer precision and ease of analysis, analog systems are often considered more robust in certain experimental setups due to their longstanding application in physics (\cite{klyshko1988}).
 
 By synthesizing insights from these diverse domains, this study aims to explore how gravitational waves interact with quantum particles, bridging the gap between quantum mechanics and general relativity.
 
@@ -98,6 +101,40 @@ Collected data will be analyzed through the following steps:
    
 3. \textbf{Error Analysis}: A comprehensive error analysis will account for any discrepancies between analog and digital data, including noise, calibration issues, and environmental influences.
 
+\section{Experimental Setup and Diagram Explanation}
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.60\textwidth]{Schematic-v1.2.drawio.jpg} % Resizes the image to 90% of text width
+    \caption{Schematic of the Experimental Setup. This diagram illustrates the experimental configuration used to test the interaction of light with varying velocities in a modified double-slit experiment.}
+    \label{fig:experiment_setup}
+\end{figure}
+\subsection{Overview of the Experimental Setup (Fig. A)}
+
+The primary apparatus consists of the \textbf{LIGO interferometer}, depicted with \textbf{500-meter arms}. A laser source is split by a beam splitter, sending light through the interferometer arms to interact with test masses at each end. Additionally, two \textbf{Double Slit Arms (A and B)} are positioned to analyze how light behaves when it passes through slits at varying velocities (accelerating and constant velocities). The light beams from these arms are designed to interact with the test masses in the interferometer, measuring any resulting interference patterns.
+
+\textbf{Explanation:} This setup uses LIGO's precision to measure potential fluctuations in the interference pattern caused by changes in light speed or acceleration through the double-slit apparatus. The concept draws upon the principles of interferometry, similar to LIGO's gravitational wave detection, but here, the goal is to measure shifts induced by light passing through accelerated or constant-velocity slits.
+
+\subsection{Velocity-Dependent Double Slit Arms (Fig. B and Fig. C)}
+
+\textbf{Fig. B}: Shows the accelerating \textbf{Double Slit Arm A}, where light slows down and speeds up as it passes through the arm.
+\begin{itemize}
+    \item \textbf{Key Observation:} The relationship between velocity and interference is studied by monitoring how variations in light speed (from acceleration) affect the diffraction pattern. As the light slows and speeds up, it interferes with the other static arm.
+\end{itemize}
+
+\textbf{Fig. C}: Depicts the constant velocity \textbf{Double Slit Arm B}, where light passes at a uniform speed.
+\begin{itemize}
+    \item \textbf{Key Observation:} Unlike the accelerating arm, this setup maintains a consistent velocity, allowing for a baseline measurement. Differences between this and the accelerating arm provide insight into how velocity fluctuations affect light’s behavior when passing through slits.
+\end{itemize}
+
+\textbf{Explanation:} These figures present two key configurations for studying light behavior under different velocity conditions. \textbf{Figure B} addresses acceleration's effect on light passing through the slits, while \textbf{Figure C} provides a control for constant velocity. The contrast between these results is expected to highlight how varying speeds influence the interference pattern in a measurable way.
+
+\subsection{GitHub Repository Reference}
+
+All schematics and experimental setups are available in the \textbf{GitHub repository} at \url{https://github.com/DavidZalewski/Paper-Investigating-Quantum-Behavior-Under-Gravitational-Waves}. The raw \textbf{draw.io} file can be found in the \textbf{Diagrams} folder within the repository for further inspection and modification.
+
+For those wishing to inspect the schematic in detail or modify it, the \textbf{draw.io} file can be opened with the Draw.io application (available online or as a desktop app). Images of the schematic in \textbf{JPEG/PNG} format are also provided for quick reference.
+
 \section{Discussion}
 
 \subsection{Interpretation of Results}
@@ -136,7 +173,7 @@ Several potential modifications and extensions to the experiment could provide d
 
 6. \textbf{Plasma Barriers}: Modifying the double slit to include a plasma barrier (e.g., fire) before the measurement stage could offer an opportunity to study how the interference pattern of particles changes when interacting with a plasma medium.
 
-\bibliographystyle{alpha}
-\bibliography{references}
+
+\printbibliography
 
 \end{document}
